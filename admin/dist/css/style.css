@@ -1,0 +1,154 @@
+.act {
+  background-color: aquamarine;
+}
+
+.table-description{
+  height: 80px;
+  overflow: auto;
+}
+
+
+.btn{
+  width: fit-content;
+  display: inline;
+  
+}
+
+.items{
+  height: 80vh;
+  /* display: flex; */
+  /* justify-content: center; */
+  margin:0 auto;
+  /* align-items: center; */
+   width: 60%;
+}
+
+.card{
+ width: 100%;
+ margin: 0;
+}
+
+.image-preview{
+  display: flex;
+  justify-content: center;
+  gap:0.5rem;
+}
+
+.image-preview img{
+  width: 110px;
+  height: 125px;
+  border: 1px rgb(136, 136, 136) solid;
+  border-radius: 2px;  
+  opacity: 0.85;
+  transition: all;
+  transition-duration: 0.3s;
+}
+
+.image-preview img:hover{
+  /* width: 120px;
+  height: 135px; */
+  transform: scale(1.12,1.12);
+  opacity: 1;
+}
+
+td,th{
+  width: fit-content;
+}
+
+img{
+  object-fit: cover;
+}
+
+.add-button{
+  display: flex;
+  justify-content: end;
+  margin-bottom: 5px;
+}
+
+td a img {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.files{
+  
+  display: flex;
+  gap: 1rem;
+  height: 400px;
+}
+
+
+.hide_del_button{
+visibility: hidden;
+
+}
+
+.file{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+/* remove arrow from input type number */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+.pdf img{
+            width: 100px;
+            /* height: 120px; */
+            height:100%
+        }
+        
+.pdf{
+    position: relative;
+}
+      .overlay{
+        /* display: none; */
+
+        /* opacity: 0; */
+        visibility: hidden;
+
+        position: absolute;
+        bottom: 1%;
+        border-radius: 0px 0px 10px 10px;
+        text-align: center;
+        height: 30%;
+        width: 100%;
+        background-color:rgba(0, 0, 0,0.5) !important;
+        transition: all;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+
+      }
+
+   .pdf_img:hover + .overlay,
+   .overlay:hover{
+        /* opacity: 1; */
+        visibility: visible;
+
+      }
+
+
+      .fa-eye:hover{
+        cursor: pointer;
+      }
+      
+      .table-img{
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+      }
